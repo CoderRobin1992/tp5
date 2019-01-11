@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+使用mod<br>
+<{volist name="data" id="vo" mod="3"}>
+
+<span <{if $mod eq 0}>style="color:red"<{elseif $mod eq 1}>style="color:blue"<{else}>style="color:yellow"<{/if}>>下标：<{$key}>---id:<{$vo.id}></span><br>
+
+<{/volist}>
+<br>
+
+</body>
+</html>
